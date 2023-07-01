@@ -13,6 +13,7 @@ $white: #F5F5F5;
     box-sizing: border-box;
     background: #F5F5F5;
     cursor: none;
+    text-decoration: none;
 
 }
 
@@ -67,7 +68,7 @@ h6 {
 }
 
 .logo-name {
-    color: #3C67F6;
+    color: $blue;
     font-size: 2.25rem;
     font-family: Poppins;
     font-style: normal;
@@ -83,13 +84,25 @@ h6 {
     height: 2.9375rem;
     flex-direction: column;
     flex-shrink: 0;
-    color: #3C67F6;
+    color: $blue;
     font-size: 1rem;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
     letter-spacing: 0.00625rem;
+}
+
+.header-tab a {
+    color: $blue;
+    transition: all 0.5s ease;
+}
+
+.header-tab a:hover {
+    color: $navy;
+    transition: all 0.5s ease;
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
 }
 
 // Footer Styling
