@@ -12,6 +12,7 @@ $white: #F5F5F5;
     margin: 0;
     box-sizing: border-box;
     background: #F5F5F5;
+    cursor: none;
 
 }
 
@@ -39,7 +40,8 @@ h6 {
 }
 
 // Header Styling
-.header-container, .footer-container {
+.header-container,
+.footer-container {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -96,10 +98,35 @@ h6 {
     width: 8.4375rem;
     height: 2.19225rem;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.socials img {
+.socials svg {
     width: 2.24575rem;
     height: 2.19225rem;
     flex-shrink: 0;
+    fill: $blue;
+    transition: all 0.5s ease;
 }
+
+.socials svg:hover {
+    fill: $navy;
+    transition: all 0.5s ease;
+}
+
+.custom-cursor-inner svg {
+    fill: $blue;
+    background: none;
+    animation: infinite-rotation 4s infinite linear;
+}
+
+@keyframes infinite-rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
