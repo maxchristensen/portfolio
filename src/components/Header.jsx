@@ -1,4 +1,5 @@
 import React from 'react'
+import TimeComponent from './TimeComponent'
 
 const Header = () => {
   return (
@@ -15,7 +16,8 @@ const Header = () => {
                 <p>Max Christensen is a skilled graphic designer and web developer who specializes in minimalist and Memphis design, delivering visually captivating and contemporary designs.</p>
             </div>
             <div className="header-tab">
-                <p>CURRENT LOCAL TIME: <br/>12:00:00 NZST(+12)</p>
+                <p>CURRENT LOCAL TIME: </p>
+                <TimeComponent />
             </div>
         </div>
     </>
