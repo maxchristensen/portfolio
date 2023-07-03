@@ -1,0 +1,56 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Union Tattoo",
+            "year": "2022",
+            "blurb": "lorem ipsum",
+            "image": [
+                {
+                    "image_id": "image1",
+                    "image_link": "public/Union/Photo-1.png",
+                    "image_alt": ""
+                }
+            ]
+
+        },
+
+        {
+            "id": 2,
+            "name": "Burger Liquor",
+            "year": "2022",
+            "blurb": "lorem ipsum",
+            "image": [
+                {
+                    "image_id": "image1",
+                    "image_link": "public/Burg Liq/Photo-1.png",
+                    "image_alt": ""
+                }
+            ]
+
+        },
+
+        {
+            "id": 3,
+            "name": "Debut",
+            "year": "2022",
+            "blurb": "lorem ipsum",
+            "image": [
+                {
+                    "image_id": "image1",
+                    "image_link": "public/Debut/Photo-1.png",
+                    "image_alt": ""
+                }
+            ]
+
+        }
+
+
+
+
+
+
+
+
+    ]
+}
