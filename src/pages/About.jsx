@@ -12,7 +12,7 @@ const About = () => {
           <br />
           <h3>Get in Touch!</h3>
           <p>Email: maxowenchristensen@yahoo.com</p>
-          <a target='_blank' href=""><p>Read CV</p></a>
+          <a target='_blank' href="/MaxChristensen_CV.pdf"><p>Read CV</p></a>
           <br /><br />
           <h4>This website was built using:</h4>
           <br />
