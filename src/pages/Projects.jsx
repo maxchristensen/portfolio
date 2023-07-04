@@ -23,13 +23,17 @@ const Projects = () => {
     const mappedProjects = projects.map((project, index) => {
       return (
         <>
-        <div className="project-tab" key={project.name + index}>
-          <div className="project-image" style={{backgroundImage: `url  (${projects.image})`}} />
-          <div className="project-info">
-            <h5>{project.name}</h5>
-            <h5 className='project-year'>{project.year}</h5>
+        <Link to={`projects/${project.id}`}>
+          <div className="project-tab" key={project.name + index}>
+            <div className="project-image">
+              <img src={project.image[0].image_link}/>
+            </div>
+            <div className="project-info">
+              <h5>{project.name}</h5>
+              <h5 className='project-year'>{project.year}</h5>
+            </div>
           </div>
-        </div>
+        </Link>
         </>
       )
     })
