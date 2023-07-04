@@ -4,11 +4,26 @@
             "id": 1,
             "name": "Union Tattoo",
             "year": "2022",
-            "blurb": "lorem ipsum",
+            "blurb": "Union Tattoo is a re-design project my colleagues and I built at the beginning of the course. This project aims to redevelop their existing website with a focus on improving the experience users have when using the website. The main focus for this project was the re-organised Site Structure. We went through the current site structure and figured out how we could make it simplified, effective and not cause any hardship for our users. We achieved this by combining multiple pages together. Our second focus was to improve user engagement on the website. We wanted to create a fun and memorable interface that gets them wanting to come back and explore the website more.",
             "image": [
                 {
                     "image_id": "image1",
                     "image_link": "Union/Photo-1.png",
+                    "image_alt": ""
+                },
+                {
+                    "image_id": "image2",
+                    "image_link": "Union/Photo-2.png",
+                    "image_alt": ""
+                },
+                {
+                    "image_id": "image3",
+                    "image_link": "Union/Photo-3.png",
+                    "image_alt": ""
+                },
+                {
+                    "image_id": "image4",
+                    "image_link": "Union/Photo-4.png",
                     "image_alt": ""
                 }
             ]
@@ -19,11 +34,26 @@
             "id": 2,
             "name": "Burger Liquor",
             "year": "2022",
-            "blurb": "lorem ipsum",
+            "blurb": "Burger Liquor is a tabletop ordering system I developed. This app aims to assist the dining experience at Burger Liquor, by introducing a quick and easy way to order via. phone, instead of having to wait for a waiter to come to you. This project focuses on the user experience of the application, and ensuring that app is easy to use and to understand. The design of the website was the classic 70’s & 80’s American diners. This website was built using Vanilla HTML & CSS.",
             "image": [
                 {
                     "image_id": "image1",
-                    "image_link": "Burg Liq/Photo-1.png",
+                    "image_link": "/Burg Liq/Photo-1.png",
+                    "image_alt": ""
+                },
+                {
+                    "image_id": "image2",
+                    "image_link": "/Burg Liq/Photo-2.png",
+                    "image_alt": ""
+                },
+                {
+                    "image_id": "image3",
+                    "image_link": "/Burg Liq/Photo-3.png",
+                    "image_alt": ""
+                },
+                {
+                    "image_id": "image4",
+                    "image_link": "/Burg Liq/Photo-4.png",
                     "image_alt": ""
                 }
             ]
@@ -34,13 +64,29 @@
             "id": 3,
             "name": "Debut",
             "year": "2022",
-            "blurb": "lorem ipsum",
+            "blurb": "Debut is a car rental single-page application. I chose to build mine as a collaboration between Southwards Car Museum and Tourism New Zealand, and the concept was all about bringing the classic Kiwi summer back to New Zealanders. The design of the app was inspired by the classic blueprints many of the cars that you can rent were built using. This website was built using vanilla HTML and JavaScript, and SCSS for the styling.",
             "image": [
                 {
                     "image_id": "image1",
                     "image_link": "Debut/Image-1.png",
                     "image_alt": ""
+                },
+                {
+                    "image_id": "image2",
+                    "image_link": "Debut/Image-2.png",
+                    "image_alt": ""
+                },
+                {
+                    "image_id": "image3",
+                    "image_link": "Debut/Image-3.png",
+                    "image_alt": ""
+                },
+                {
+                    "image_id": "image4",
+                    "image_link": "Debut/Image-4.png",
+                    "image_alt": ""
                 }
+
             ]
 
         }

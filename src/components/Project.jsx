@@ -30,23 +30,25 @@ const Project = () => {
       return (
         <div className='single-project-container' key={project.id}>
                 <div className="single-project-tab">
-                <div className="single-project-image">
-                    <img src={project.image[0].image_link}/>
+                    <div className="single-project-image">
+                        <img src={project.image[0].image_link}/>
                     </div>
-                {/* <div className="single-project-image">
-                    <img src={project.image[1].image_link}/>
-                </div>
+                    <div className="single-project-image">
+                        <img src={project.image[1].image_link}/>
+                    </div>
                 </div>
                 <div className="single-project-tab">
-                <div className="single-project-image">
-                    <img src={project.image[2].image_link}/>
+                    <div className="single-project-image">
+                        <img src={project.image[2].image_link}/>
                     </div>
-                <div className="single-project-image">
-                    <img src={project.image[3].image_link}/>
-                </div> */}
+                    <div className="single-project-image">
+                        <img src={project.image[3].image_link}/>
+                    </div>
                 </div>
                 <div className="single-project-2-tabs">
-
+                <h2>{project.name}</h2>
+                <h6>{project.year}</h6>
+                <p>{project.blurb}</p>
                 </div>
         </div>
      );
