@@ -23,7 +23,7 @@ const Projects = () => {
     const mappedProjects = projects.map((project, index) => {
       return (
         <>
-        <Link to={`projects/${project.id}`}>
+        <Link to={`project/${project.id}`}>
           <div className="project-tab" key={project.name + index}>
             <div className="project-image">
               <img src={project.image[0].image_link}/>

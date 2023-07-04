@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 
 const Project = () => {
@@ -8,15 +9,16 @@ const Project = () => {
     const {id} = useParams()
 
     useEffect(() => {
-        axios.get(`${endpoint}`)
-        .then((res) => {
-          console.log(res)
-          setPost(res.data)
-          setLoading(false)
-        })
-        .catch((err) => console.log(err))
-      }, [id])
-    
+        const index = (id - 1);
+        axios.get('/projects.json')
+            .then(response => {
+                setStudent(response.data.projects[index])
+                setProjects(response.data.projects[index].project)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }, [id])
       return (
         <div className='single-project-container' key={project.id}>
                 <div className="single-project-tab">
