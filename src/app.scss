@@ -5,13 +5,12 @@
 $blue: #3C67F6;
 $navy: #051A61;
 $black: #101018;
-$white: #F5F5F5;
+$white: #ffffff;
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: #F5F5F5;
     cursor: none;
     text-decoration: none;
 
@@ -19,6 +18,9 @@ $white: #F5F5F5;
 
 body {
     font-family: 'Space Grotesk', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #root {
@@ -84,11 +86,12 @@ h6 {
 
 .header-tab,
 .project-tab,
-.about-tab {
+.about-tab,
+.single-project-tab {
     display: flex;
     width: 18.9375rem;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     flex-shrink: 0;
     color: $blue;
     font-size: 1rem;
@@ -100,9 +103,11 @@ h6 {
 .about-bio {
     display: flex;
     width: 37.875rem;
+    flex-direction: column;
 }
 
-.about-tab p, .about-tab li {
+.about-tab p,
+.about-tab li {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 300;
 }
@@ -120,7 +125,10 @@ h6 {
 }
 
 
-.projects-container, .about-container {
+.projects-container,
+.about-container,
+.single-project-container
+ {
     height: 55vh;
 }
 
@@ -129,10 +137,17 @@ h6 {
 }
 
 .project-image {
+    display: flex;
     width: 100%;
     height: 350px;
     border: 2px solid $blue;
     margin-bottom: 20px;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+    }
 }
 
 .project-info {
@@ -156,7 +171,7 @@ h6 {
 }
 
 // Footer Styling
-.socials {  
+.socials {
     width: 8.4375rem;
     height: 2.19225rem;
     flex-shrink: 0;
@@ -193,7 +208,7 @@ h6 {
 
 // Custom Cursor
 .custom-cursor-inner svg {
-    fill: $blue;
+    fill: $black;
     background: none;
     animation: infinite-rotation 4s infinite linear;
 }

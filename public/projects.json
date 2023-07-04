@@ -8,7 +8,7 @@
             "image": [
                 {
                     "image_id": "image1",
-                    "image_link": "public/Union/Photo-1.png",
+                    "image_link": "Union/Photo-1.png",
                     "image_alt": ""
                 }
             ]
@@ -23,7 +23,7 @@
             "image": [
                 {
                     "image_id": "image1",
-                    "image_link": "public/Burg Liq/Photo-1.png",
+                    "image_link": "Burg Liq/Photo-1.png",
                     "image_alt": ""
                 }
             ]
@@ -38,7 +38,7 @@
             "image": [
                 {
                     "image_id": "image1",
-                    "image_link": "public/Debut/Photo-1.png",
+                    "image_link": "Debut/Image-1.png",
                     "image_alt": ""
                 }
             ]
