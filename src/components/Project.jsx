@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 
 const Project = () => {
-    const [project, setProjects] = useState([])
+    const [project, setProjects] = useState(null)
+    const [loading, setLoading] = useState(true)
 
     const {id} = useParams()
 
@@ -12,20 +13,27 @@ const Project = () => {
         const index = (id - 1);
         axios.get('/projects.json')
             .then(response => {
-                setStudent(response.data.projects[index])
-                setProjects(response.data.projects[index].project)
+                setProjects(response.data.projects[index])
+                setLoading(false)
             })
             .catch(error => {
                 console.log(error)
             })
     }, [id])
+
+    console.log(project);
+
+    if (loading) {
+        return <>Loading...</>
+      }
+
       return (
         <div className='single-project-container' key={project.id}>
                 <div className="single-project-tab">
                 <div className="single-project-image">
                     <img src={project.image[0].image_link}/>
                     </div>
-                <div className="single-project-image">
+                {/* <div className="single-project-image">
                     <img src={project.image[1].image_link}/>
                 </div>
                 </div>
@@ -35,7 +43,7 @@ const Project = () => {
                     </div>
                 <div className="single-project-image">
                     <img src={project.image[3].image_link}/>
-                </div>
+                </div> */}
                 </div>
                 <div className="single-project-2-tabs">
 
