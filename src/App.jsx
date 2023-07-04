@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '/src/App.css'
+import '/src/app.css'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import Links from './components/Links'
 import Header from './components/Header'
