@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <div className='footer-container'>
         <div className="header-tab">
-            <Link to="/">Projects</Link>
+            <Link to="about"><p>About</p></Link>
         </div>
         <div className="header-tab">
-            <Link to="about"><p>About</p></Link>
+            <Link to="/">Projects</Link>
         </div>
         <div className="header-tab">
             
